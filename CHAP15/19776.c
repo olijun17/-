@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    char name[21], school[21];
+    int grade;
+
+    scanf("%s %s %d", name, school, &grade);
+
+    printf("Name : %s\n", name);
+    printf("School : %s\n", school);
+    printf("Grade : %d\n", grade);
+
+    return 0;
+}
