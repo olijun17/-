@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int arr[100];
+    int count = 0;
+    int input;
+    
+    while (count < 100) {
+        scanf("%d", &input);
+        if (input == 0) {
+            break;
+        }
+        arr[count] = input;
+        count++;
+    }
+    
+    for (int i = count - 1; i >= 0; i--) {
+        printf("%d", arr[i]);
+        if (i > 0) {
+            printf(" ");
+        }
+    }
+    printf("\n");
+    
+    return 0;
+}
